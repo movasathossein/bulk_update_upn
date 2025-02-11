@@ -2,6 +2,10 @@
 
 This repository contains a PowerShell script designed to update the **UserPrincipalName (UPN)** for a list of users in Active Directory. The script reads user account names (sAMAccountName) from a CSV file and appends a new domain suffix to update their UPNs.
 
+## Why Use This Script?
+
+When internal domain names differ from external ones (e.g., `domain.local` for internal use and `domain.net` for external email addresses), users might encounter login issues. By standardizing UPNs with an external domain, not only do you simplify the login process, but you also align user credentials with email addresses, providing a unified and seamless experience.
+
 ## Features
 
 - Bulk processing of Active Directory user accounts.
